@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Index en html para la app Exportar tabla a csv
+-->
+<html>
+    <head>
+        <title>Exportar csv</title>
+        <meta charset="UTF-8">
+        <meta author="Joaquín Melero"
+            content="width=device-width, initial-scale=1.0">
+        <script src="export_csv.js"></script>
+    </head>
+    <style>
+
+        body{
+            align-items: center;
+            margin: auto;
+        }
+
+        #contenedor{
+            margin: auto;
+            text-align: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+
+        table, th, tr, td {
+            border: 1px rgb(44, 108, 247) solid;
+            margin: auto;
+            padding: 0,5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            margin-bottom: 2%;
+            color: rgba(16, 0, 243, 0.541);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
+
+       
+
+        button{
+            color: rgba(16, 0, 243, 0.541);
+            background-color: aliceblue;
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
+
+    </style>
+    <body>
+        <div id="contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joaquín Melero</td>
+                        <td>jo769@gmail.com</td>
+                        <td>ESPAÑA</td>
+                    </tr>
+                    <tr>
+                        <td>Lola Martínez</td>
+                        <td>lolam@gmail.com</td>
+                        <td>ITALIA</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button onclick="exportTableToCSV('class_mates.csv')">Exportar tabla
+                a csv</button>
+        </div>
+    </body>
+</html>
